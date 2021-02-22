@@ -65,7 +65,13 @@ const MusicPlayer = () => {
     return (
         <Box w = "100%" display = "block">
             <audio src="https://funksyou.com/fileDownload/Songs/128/34860.mp3" id="music"></audio>
-            <Slider w = "80%" aria-label="slider-ex-2" colorScheme="pink" defaultValue = {0} value={(time/dur)*100} onChange = {(value) => updateTime(value)}>
+            <Slider 
+            w = "80%" 
+            aria-label="slider-ex-2" 
+            colorScheme="pink" 
+            defaultValue = {0} 
+            value={(time/dur)*100} 
+            onChange = {(value) => updateTime(value)}>
                 <SliderTrack>
                     <SliderFilledTrack />
                 </SliderTrack>
